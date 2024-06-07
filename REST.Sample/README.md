@@ -1,4 +1,4 @@
-# PnPJS.Sample
+# Rest.Sample
 
 ## Overview
 
@@ -19,7 +19,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Getting Started
 
-Follow these instructions to set up and run the PnPJS.Sample project.
+Follow these instructions to set up and run the Rest.Sample project.
 
 ### Installation
 
