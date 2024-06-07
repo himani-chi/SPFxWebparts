@@ -1,73 +1,95 @@
-# pn-pjs-sample
+# PnPJS.Sample
 
-## Summary
+## Overview
 
-Short summary on functionality and used technologies.
-
-[picture of the solution in action, if possible]
-
-## Used SharePoint Framework Version
-
-![version](https://img.shields.io/badge/version-1.19.0-green.svg)
-
-## Applies to
-
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
-## Prerequisites
-
-> Any special pre-requisites?
-
-## Solution
-
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
-
-## Version history
-
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
-
-## Disclaimer
-
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
-
----
-
-## Minimal Path to Awesome
-
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
-
-> Include any additional steps as needed.
+The PnPJS.Sample project demonstrates how to use PnPjs within a SharePoint Framework (SPFx) web part. PnPjs is a collection of JavaScript libraries designed to simplify working with SharePoint REST APIs. This sample provides a basic example of how to leverage PnPjs to interact with SharePoint data.
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
+- **Add item**: Add new item to list - list1.
+- **Show existing list items**: Show items from list - list1.
 
-This extension illustrates the following concepts:
 
-- topic 1
-- topic 2
-- topic 3
+## Prerequisites
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+Before you begin, ensure you have met the following requirements:
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+- SharePoint Online subscription.
+- Node.js LTS version 18.x or higher.
+- SharePoint Framework (SPFx) development environment [set up](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment).
 
-## References
+## Getting Started
 
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+Follow these instructions to set up and run the PnPJS.Sample project.
+
+### Installation
+
+1. **Clone the repository:**
+   
+   ```bash
+   git clone https://github.com/himani-chi/SPFxWebparts.git
+
+2. **Navigate to the project directory**
+
+   ```bash
+   cd SPFxWebparts       
+  
+3. **Install dependencies:**
+
+   ```bash
+   npm install
+   
+4. **Serve the solution locally:**
+
+   ```bash
+   gulp serve
+
+ This command opens the SharePoint workbench, allowing you to test the web part locally.
+
+ ## Deployment
+
+ 1. **Bundle the Solution:**
+
+      Prepare the project for deployment by bundling the assets. This command prepares and optimizes the project files for production.
+
+    ```bash
+    gulp bundle --ship
+       
+ 3. **Package the Solution:**
+
+     Create a SharePoint package (.sppkg) file. This step generates a package in the sharepoint/solution folder that you can deploy to your SharePoint App Catalog.
+ 
+    ```bash
+    gulp package-solution --ship  
+ 
+ 5. **Upload and Deploy the Package:**
+    - Go to your SharePoint Online App Catalog site.
+    - Upload the .sppkg file from the sharepoint/solution directory to the 'Apps for SharePoint' library.
+    - Deploy the package by clicking the "Deploy" button when prompted.
+
+
+  ## Contributing
+  
+  Contributions to the Project are welcome! If you would like to contribute, please:
+
+  - Fork the repository.
+  - Create a feature branch: `git checkout -b my-new-feature`
+  - Commit your changes: `git commit -am 'Add some feature`
+  - Push to the branch: `git push origin my-new-feature`
+  - Submit a pull request.
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+## Support
+
+If you encounter any problems or have suggestions, please [open an issue](https://github.com/himani-chi/SPFxWebparts.git/issues) on GitHub. Community support and contributions are highly appreciated!
+
+
+## Acknowledgments
+
+- Thanks to the SharePoint Framework Community for guidance and support.
+- [Microsoft Documentation](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/serve-your-web-part-in-a-sharepoint-page) for detailed setup and deployment instructions.
