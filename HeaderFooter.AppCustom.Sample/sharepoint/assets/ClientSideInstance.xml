@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="HeaderFooterV19"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="50eff0f4-4a86-4e47-9430-e468802989d5"
+        Properties="{&quot;Top&quot;:&quot;Header&quot;, &quot;Bottom&quot;:&quot;Footer&quot;}">
+    </ClientSideComponentInstance>
+</Elements>
